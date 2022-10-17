@@ -3,3 +3,31 @@
 body {
   font-family: "Lato", sans-serif;
 }
+
+.top-navbar {
+  background-color: aqua;
+}
+
+.bottom-navbar {
+  background-color: blueviolet;
+}
+
+#hello-message {
+  background-color: brown;
+}
+
+#main-program {
+  background-color: cadetblue;
+}
+
+#featured-speakers {
+  background-color: chartreuse;
+}
+
+#top-footer {
+  background-color: chocolate;
+}
+
+#bottom-footer {
+  background-color: crimson;
+}
