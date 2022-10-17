@@ -4,12 +4,39 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.top-navbar {
-  background-color: aqua;
+.nav-link {
+  background-color: #fff;
+  color: #272a31;
 }
 
-.bottom-navbar {
-  background-color: blueviolet;
+#bottom-navbar-list .nav-link {
+  background-color: #272a31;
+  color: #fff;
+}
+
+#top-navbar {
+  background-color: #272a31;
+  color: #fff;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 95%;
+  overflow-y: scroll;
+  backdrop-filter: blur(80px);
+}
+
+#bottom-navbar {
+  background-color: #272a31;
+  color: #fff;
+}
+
+#nav-hamburguer {
+  background-color: #fff;
+  color: #272a31;
 }
 
 #hello-message {
