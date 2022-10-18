@@ -13,78 +13,85 @@
 </head>
 
 <body>
-    <header>
-        <div id="navbar-hamburguer" class="container my-2">
-            <a href="#" id="hamburguer-a" class="nav-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
-        </div>
-        <nav id="top-navbar" class="visually-hidden">
-            <ul id="top-navbar-list" class="nav justify-content-end gap-2">
-                <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">English</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">My Page</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">Logout</li>
-            </ul>
-            <div id="bottom-navbar" class="mt-5 visually-hidden">
-                <ul id="bottom-navbar-list" class="nav gap-3">
-                    <li id="nav-close" class="nav-item"><i class="fa-solid fa-circle-xmark fa-2xl"></i></li>
-                    <li class="nav-item"><a class="nav-link fs-4" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link fs-4" href="#">Program</a></li>
-                    <li class="nav-item"><a class="nav-link fs-4" href="#">Join</a></li>
-                    <li class="nav-item"><a class="nav-link fs-4" href="#">Sponsor</a></li>
-                    <li class="nav-item"><a class="nav-link fs-4" href="#">News</a></li>
-                    <li id="cc-campaign" class="nav-item"><a href="#" class="nav-link fs-4">CC Campaign</a></li>
-                </ul>
+    <div class="header-div">
+        <header class="container-fluid">
+            <div id="navbar-hamburguer" class="container py-2">
+                <a href="#" id="hamburguer-a" class="nav-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
             </div>
-        </nav>
-        <section id="hello-message" class="container">
-            <h2>Welcome to Icows 2022</h2>
-            <h1>16th. INTERNATIONAL CONFERENCE on Open-Water Swimmig</h1>
-            <p id="hello-p" class="container">the premier interdisciplinary forum for the presentation of new advances
-                and research results in the fields of Sport and Health Sciences.</p>
-            <h3 id="hello-date">2022.11.10(THU) ~ 11(FRI)</h3>
-            <h4 id="hello-place">@ Dubai, United Arab Emirates</h4>
-        </section>
-    </header>
-    <main class="container-fluid">
-        <section id="main-program" class="container">
-            <header id="program-title">
+            <nav id="top-navbar" class="visually-hidden">
+                <ul id="top-navbar-list" class="nav justify-content-end gap-2">
+                    <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">English</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">My Page</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">Logout</li>
+                </ul>
+                <div id="bottom-navbar" class="mt-5 visually-hidden">
+                    <ul id="bottom-navbar-list" class="nav gap-3">
+                        <li id="nav-close" class="nav-item"><i class="fa-solid fa-circle-xmark fa-2xl"></i></li>
+                        <li class="nav-item"><a class="nav-link fs-4" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4" href="#">Program</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4" href="#">Join</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4" href="#">Sponsor</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4" href="#">News</a></li>
+                        <li id="cc-campaign" class="nav-item"><a href="#" class="nav-link fs-4">CC Campaign</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="hello-message" class="container pt-3">
+                <h4 class="mt-5 fw-light">Welcome to ICOWS 2022!</h4>
+                <h1 class="fw-bold">16th. INTERNATIONAL CONFERENCE on Open-Water Swimmig</h1>
+                <div class="div-hello-p py-1 border rounded border-4 border-white mb-2 px-3 py-1">
+                    <p id="hello-p" class="m-0 fw-light">The
+                        premier
+                        interdisciplinary
+                        forum for
+                        the
+                        presentation of
+                        new advances
+                        and research results in Sport and Health Sciences.</p>
+                </div>
+                <h3 id="hello-date" class="fw-bold">2022.11.10(THU) ~ 11(FRI)</h3>
+                <h5 id="hello-place" class="fw-light">@ Dubai, United Arab Emirates</h5>
+            </section>
+        </header>
+    </div>
+    <main>
+        <section id="main-program" class="container-fluid pt-5 pb-3">
+            <header id="program-title" class="text-center">
                 <h3>Main Program</h3>
-                <div id="program-separator-line">--------</div>
+                <div id="program-separator-line" class="guide-bar"></div>
             </header>
-            <ul id="program-kinds">
-                <li>
-                    <article>
-                        <header>
-                            <figure></figure>
-                        </header>
-                        <h4>Title</h4>
-                        <p>Description</p>
-                    </article>
-                </li>
-            </ul>
-            <footer>
-                <div id="join-cc">Join CC Global Summit 2015</div>
+            <main id="div-main-program">
+            </main>
+            <footer class="container-fluid text-center">
+                <div id="join-button" class="my-4 py-4 mx-5 fw-bold">Join ICOWS 2022!</div>
             </footer>
 
         </section>
-        <section id="featured-speakers" class="container">
-            <header>
+        <section id="featured-speakers" class="container-fluid pt-5 pb-3">
+            <header id="speaker-title" class="text-center">
                 <h3>Featured Speakers</h3>
-                <ul>
-                    <li>
-                        <figure></figure>
-                        <h4>Yochai Benkler</h4>
-                        <h5>Berkman Professor of Enter...</h5>
-                        <div>-----</div>
-                        <p>Benkler studies....</p>
-                    </li>
-                </ul>
+                <div id="program-separator-line" class="guide-bar"></div>
             </header>
+            <main id="div-main-speaker container-fluid">
+                <div id="first-speakers" class="container-fluid row text-center my-sm-0 py-sm-0 g-sm-0">
+                </div>
+                <div id="more-button-div" class="container-fluid text-center">
+                    <div id="more-button" class="my-4 py-2 mx-1 fw-normal border border-2">More <i id="angle-down"
+                            class="fa-solid fa-angle-down fa-xl"></i></div>
+                </div>
+                <div id="last-speakers" class="container-fluid row text-center my-sm-0 py-sm-0 g-sm-0 visually-hidden">
+                </div>
+                <div id="less-button-div" class="container-fluid text-center visually-hidden">
+                    <div id="more-button" class="my-4 py-2 mx-1 fw-normal border border-2">Less <i id="angle-down"
+                            class="fa-solid fa-angle-up fa-xl"></i></div>
+                </div>
+            </main>
         </section>
     </main>
 
@@ -107,7 +114,7 @@
     </footer>
 
 
-    <script src="assets/javascript/main.js"></script>
+    <script type="module" src="assets/javascript/main.js"></script>
 </body>
 
 </html>

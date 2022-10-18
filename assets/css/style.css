@@ -5,7 +5,6 @@ body {
 }
 
 .nav-link {
-  background-color: #fff;
   color: #272a31;
 }
 
@@ -17,13 +16,12 @@ body {
 #top-navbar {
   background-color: #272a31;
   color: #fff;
-
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   opacity: 95%;
   overflow-y: scroll;
   backdrop-filter: blur(80px);
@@ -36,19 +34,84 @@ body {
 
 #nav-hamburguer {
   background-color: #fff;
-  color: #272a31;
+  color: rgb(39, 42, 50);
 }
 
-#hello-message {
-  background-color: brown;
+#hello-message h1 {
+  color: #ec5242;
+}
+
+#hello-message h3,
+h5 {
+  color: rgb(87, 87, 87);
+}
+
+#hello-message h4 {
+  color: #ec5242;
+}
+
+.header-div {
+  background-image: url(/assets/images/mobile_intro_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
 }
 
 #main-program {
-  background-color: cadetblue;
+  background-color: rgb(39, 42, 50);
+  background-image: url(/assets/images/pattern_bg.png);
+  background-repeat: repeat;
+  color: #fff;
+}
+
+.div-hello-p {
+  background-color: rgb(247, 247, 248);
+  opacity: 1;
+}
+
+.guide-bar {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 0px auto 54px;
+}
+
+.guide-bar-grey {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(87, 87, 87);
+  margin: 0px auto 54px;
+}
+
+.program-box {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.program-box-title {
+  color: #ec5242;
+}
+
+#join-button {
+  background-color: #ec5242;
+}
+
+#angle-down {
+  color: #ec5242;
+}
+
+.p-role {
+  color: #ec5242;
+}
+
+.p-comment {
+  color: rgb(87, 87, 87);
+}
+
+#more-button {
+  color: rgb(87, 87, 87);
 }
 
 #featured-speakers {
-  background-color: chartreuse;
 }
 
 #top-footer {
