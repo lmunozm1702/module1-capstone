@@ -25,6 +25,7 @@ body {
   opacity: 95%;
   overflow-y: scroll;
   backdrop-filter: blur(80px);
+  transition: height 1s ease;
 }
 
 #bottom-navbar {
@@ -54,7 +55,7 @@ h5 {
   background-image: url(/assets/images/mobile_intro_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 95vh;
 }
 
 #main-program {
@@ -111,13 +112,27 @@ h5 {
   color: rgb(87, 87, 87);
 }
 
-#featured-speakers {
+#partner-title {
+  background-color: rgb(87, 87, 87);
+  color: #fff;
 }
 
-#top-footer {
-  background-color: chocolate;
+.partner-logos {
+  filter: grayscale(1);
+  width: 75%;
+}
+
+.partner-logos2 {
+  filter: grayscale(1);
+  width: 50%;
 }
 
 #bottom-footer {
-  background-color: crimson;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  #navbar-hamburguer {
+    display: none;
+  }
 }
