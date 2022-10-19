@@ -70,7 +70,7 @@ function displayMainProgram(divTag) {
         let divBox = document.createElement('div');
         divBox.classList.add('row');
         divBox.classList.add('mx-1');
-        divBox.classList.add('px-1');
+        divBox.classList.add('px-0');
         divBox.classList.add('py-3');
         divBox.classList.add('program-box');
         colProgram.appendChild(divBox);
@@ -146,7 +146,10 @@ function displaySpeakers(firstDiv, secondDiv) {
         newTag.classList.add('col');
         newTag.classList.add('col-12');
         newTag.classList.add('col-sm-4');
-        newTag.classList.add('col-md-6');
+        newTag.classList.add('col-md-auto');
+        newTag.classList.add('p-0');
+        newTag.classList.add('m-0');
+
         newTag2.appendChild(newTag);
 
         let newTag3 = document.createElement('img');
