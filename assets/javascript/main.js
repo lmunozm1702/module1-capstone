@@ -8,14 +8,14 @@ mobileNav.addEventListener('click', (event) => {
 
 function displayMobileMenu() {
     const mobileNavDiv = document.querySelector('#navbar-hamburguer');
-    mobileNavDiv.classList.add('visually-hidden');
+    mobileNavDiv.classList.add('hidden');
 
     const topNavbar = document.querySelector('#top-navbar');
-    topNavbar.classList.replace('visually-hidden', 'container-fluid');
+    topNavbar.classList.replace('hidden', 'container-fluid');
     topNavbar.classList.add('py-3');
 
     const bottomNavbar = document.querySelector('#bottom-navbar');
-    bottomNavbar.classList.remove('visually-hidden');
+    bottomNavbar.classList.remove('hidden');
 
     const bottomNavList = document.querySelector('#bottom-navbar-list');
     bottomNavList.classList.add('flex-column');
@@ -28,10 +28,10 @@ function displayMobileMenu() {
 }
 
 function closeMobileMenu(mobileNavDiv, topNavbar, bottomNavbar, bottomNavList) {
-    mobileNavDiv.classList.remove('visually-hidden');
-    topNavbar.classList.replace('container-fluid', 'visually-hidden');
+    mobileNavDiv.classList.remove('hidden');
+    topNavbar.classList.replace('container-fluid', 'hidden');
     topNavbar.classList.remove('py-3');
-    bottomNavbar.classList.add('visually-hidden');
+    bottomNavbar.classList.add('hidden');
     bottomNavList.classList.remove('flex-column');
     bottomNavList.classList.remove('align-items-center');
 }
@@ -163,7 +163,7 @@ function displaySpeakers(firstDiv, secondDiv) {
         newTag.classList.add('text-sm-start');
         newTag2.appendChild(newTag);
 
-        newTag2 = document.createElement('h3');
+        newTag2 = document.createElement('h4');
         newTag2.textContent = speakerData.name;
         newTag.appendChild(newTag2);
 
@@ -202,6 +202,15 @@ let mobileMore = document.querySelector('#more-button');
 mobileMore.addEventListener('click', (event) => {
     displayMoreSpeakers(event, document.querySelector('#last-speakers'), document.querySelector('#more-button-div'), document.querySelector('#less-button-div'));
 });
+
+//let x = window.matchMedia('(min-width: 768px)');
+//x.addEventListener('change', (y) => {
+//
+//    let topNavbar = document.querySelector('#top-navbar');
+//    topNavbar.classList.remove('visually-hidden');
+//})
+//myFunction(x) // Call listener function at run time
+//x.addListener(myFunction) // Attach listener function on state changes
 
 displayMainProgram(document.querySelector('#div-main-program'));
 displaySpeakers(document.querySelector('#first-speakers'), document.querySelector('#last-speakers'));

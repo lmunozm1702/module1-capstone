@@ -58,6 +58,12 @@ h5 {
   height: 95vh;
 }
 
+@media only screen and (min-width: 768px) {
+  .header-div {
+    background-image: url(/assets/images/source-bg-desktop.png);
+  }
+}
+
 #main-program {
   background-color: rgb(39, 42, 50);
   background-image: url(/assets/images/pattern_bg.png);
@@ -131,8 +137,82 @@ h5 {
   background-color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   #navbar-hamburguer {
     display: none;
+  }
+
+  #top-navbar {
+    background-color: #272a31;
+    color: #fff;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #top-navbar-list {
+    background-color: #272a31;
+    padding-right: 10px;
+    padding-bottom: 3px;
+  }
+
+  .hidden {
+    display: contents;
+  }
+
+  #nav-close {
+    display: none;
+  }
+
+  #bottom-navbar {
+    color: #272a31;
+    background-color: #fff;
+  }
+
+  #bottom-navbar-list .nav-link {
+    color: #272a31;
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
+  #nav-logo {
+    padding: 0 40px 5px 10px;
+  }
+
+  #bottom-navbar-list {
+    color: #272a31;
+    background-color: #fff;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+
+  #cc-campaign {
+    border: solid;
+    border-color: #ec5242;
+    padding-bottom: 7px;
+    margin-left: 40px;
+  }
+
+  #hello-message {
+    margin-top: 15vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #hello-message {
+    margin-top: 0vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #hello-message {
+    margin-top: 5vw;
   }
 }

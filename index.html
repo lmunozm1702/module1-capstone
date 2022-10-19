@@ -14,11 +14,11 @@
 
 <body>
     <div class="header-div">
-        <header class="container-fluid">
-            <div id="navbar-hamburguer" class=" py-2 pt-4">
+        <header class="container-fluid p-0 m-0">
+            <div id="navbar-hamburguer" class="py-2 pt-4">
                 <a href="#" id="hamburguer-a" class="nav-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
             </div>
-            <nav id="top-navbar" class="container-fluid visually-hidden">
+            <nav id="top-navbar" class="container-fluid hidden">
                 <ul id="top-navbar-list" class="nav justify-content-end gap-2">
                     <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
                     <li class="nav-item">|</li>
@@ -30,15 +30,17 @@
                     <li class="nav-item">|</li>
                     <li class="nav-item">Logout</li>
                 </ul>
-                <div id="bottom-navbar" class="mt-5 visually-hidden">
-                    <ul id="bottom-navbar-list" class="nav gap-3">
+                <div id="bottom-navbar" class="mt-5 hidden">
+                    <ul id="bottom-navbar-list" class="nav gap-3 gap-md-0">
                         <li id="nav-close" class="nav-item"><i class="fa-solid fa-circle-xmark fa-2xl"></i></li>
-                        <li class="nav-item"><a class="nav-link fs-4" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4" href="#">Program</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4" href="#">Join</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4" href="#">Sponsor</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4" href="#">News</a></li>
-                        <li id="cc-campaign" class="nav-item"><a href="#" class="nav-link fs-4">CC Campaign</a></li>
+                        <li class="nav-item"><a id="nav-logo" class="nav-link" href="#"><img
+                                    src="assets/images/irc-logo.png" alt="IRC Logo"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Program</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Join</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sponsor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li id="cc-campaign" class="nav-item"><a href="#" class="nav-link">CC Campaign</a></li>
                     </ul>
                 </div>
             </nav>
@@ -76,7 +78,7 @@
             </footer>
 
         </section>
-        <section id="featured-speakers" class="container-fluid pt-5 pb-0">
+        <section id="featured-speakers" class="container-fluid pt-5 pb-0 pe-5">
             <header id="speaker-title" class="text-center">
                 <h3>Featured Speakers</h3>
                 <div id="program-separator-line" class="guide-bar"></div>
@@ -120,10 +122,11 @@
                 </div>
             </div>
         </div>
-        <div id="bottom-footer" class="container-fluid px-0 mt-0 mb-3 row">
+        <div id="bottom-footer" class="container-fluid px-0 mt-0 mb-3 row align-items-center">
             <div class="col mx-0 px-0 text-end"><a href="https://www.creativecommons.org" target="_blank"><img
                         width="75%" src="assets/images/cc-logo2.png" alt="Creative Commons Logo"></a></div>
-            <div class="col mx-0 px-0 p-comment">© 2022 World Academy of Science, Engineering and Technology</div>
+            <div class="col mx-0 px-0 p-comment">© 2022 World Academy of Science, Engineering and
+                Technology</div>
         </div>
         <div id="program-separator-line" class="guide-bar-grey"></div>
     </footer>
