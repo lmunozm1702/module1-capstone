@@ -374,7 +374,6 @@ h5 {
   #hello-message {
     padding-top: 10vw;
     padding-bottom: 15vw;
-    margin-right: 20%;
     margin-left: calc((100vw - 1024px) / 2);
     margin-right: calc((100vw - 1024px) / 2);
     margin-top: 0;
@@ -444,7 +443,8 @@ h5 {
 }
 
 .main-about {
-  background: url('../images/mobile_intro_bg.png') center center no-repeat
+  background:
+    url('../images/mobile_intro_bg.png') center center no-repeat
     rgb(247, 247, 248);
   background-size: cover;
   background-repeat: no-repeat;
