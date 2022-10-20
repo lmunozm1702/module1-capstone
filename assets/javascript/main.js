@@ -50,21 +50,16 @@ function displayMainProgram(divTag) {
       divRow = document.createElement('div');
       divRow.id = `program-row-${idRow}`;
       divRow.classList.add('row');
-      divRow.classList.add('container-fluid');
-      divRow.classList.add('justify-content-center');
-      divRow.classList.add('m-0');
-      divRow.classList.add('p-0');
+
+      divRow.classList.add('row-cols-1');
+      divRow.classList.add('row-cols-md-5');
+      divRow.classList.add('g-3');
+      divRow.classList.add('g-md-1');
       divTag.appendChild(divRow);
     } else { contRow += 1; }
 
     const colProgram = document.createElement('div');
     colProgram.classList.add('col');
-    colProgram.classList.add('col-12');
-    colProgram.classList.add('col-sm-12');
-    colProgram.classList.add('col-md-2');
-    colProgram.classList.add('mx-md-0');
-    colProgram.classList.add('px-md-0');
-    colProgram.classList.add('mb-3');
     colProgram.classList.add('container');
     divRow.appendChild(colProgram);
 
@@ -195,14 +190,14 @@ function displaySpeakers(firstDiv, secondDiv) {
 }
 
 function displayMoreSpeakers(event, speakersDiv, buttonDiv, buttonLess) {
-  speakersDiv.classList.remove('visually-hidden');
+  speakersDiv.classList.remove('hidden');
   buttonDiv.classList.add('visually-hidden');
-  buttonLess.classList.remove('visually-hidden');
+  buttonLess.classList.remove('hidden');
 
   buttonLess.addEventListener('click', () => {
-    speakersDiv.classList.add('visually-hidden');
+    speakersDiv.classList.add('hidden');
     buttonDiv.classList.remove('visually-hidden');
-    buttonLess.classList.add('visually-hidden');
+    buttonLess.classList.add('hidden');
   });
 }
 

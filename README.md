@@ -23,17 +23,16 @@ https://lmunozm1702.github.io/module1-capstone/
 
 ## Getting Started
 
-### Prerequisites
-
-### Setup
-
 ### Install
+
+- Create a folder into your storage device.
+- Open a command line Terminal and go to the new folder.
+- Execute: 'git clone https://github.com/lmunozm1702/module1-capstone.git'
+- Open the index.html on your browser.
 
 ### Usage
 
 Once on the landing page, you can scroll down to see the general info and click the about link on the menu (select the hamburger menu first if you are connected from a mobile device), to see the organization info.
-
-### Run tests
 
 ### Deployment
 
@@ -61,8 +60,8 @@ Give a ⭐️ if you like this project!
 
 The design of the website is inspired by the idea of [Cindy Shin](https://www.behance.net/adagio07), and publicated under license of CreativeCommons.
 
+The OW Swimmers video is property of [Bulat Iskhakov](https://www.shutterstock.com/g/Bulat_Iskhakov/video), and is shared into the Coverr platform.
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

@@ -19,21 +19,23 @@
             <a href="#" id="hamburguer-a" class="nav-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
         </div>
         <nav id="top-navbar" class="container-fluid hidden">
-            <ul id="top-navbar-list" class="nav justify-content-end gap-2">
-                <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">English</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">My Page</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">Logout</li>
-            </ul>
+            <div class="top-nav-container">
+                <ul id="top-navbar-list" class="nav justify-content-end gap-2">
+                    <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">English</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">My Page</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">Logout</li>
+                </ul>
+            </div>
             <div id="bottom-navbar" class="mt-5 hidden">
                 <ul id="bottom-navbar-list" class="nav gap-3 gap-md-0">
                     <li id="nav-close" class="nav-item"><i class="fa-solid fa-circle-xmark fa-2xl"></i></li>
-                    <li class="nav-item"><a id="nav-logo" class="nav-link" href="index.html"><img
+                    <li id="nav-logo-desk" class="nav-item"><a id="nav-logo" class="nav-link" href="index.html"><img
                                 src="assets/images/irc-logo.png" alt="IRC Logo"></a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Program</a></li>
@@ -46,7 +48,7 @@
         </nav>
     </header>
     <main class="main-about">
-        <section id="hello-message-about">
+        <section id="hello-message-about" class="main-container">
             <h1 class="fw-bold">ICOWS 2022!<br>INTERNATIONAL CONFERENCE</h1>
             <div id="about-separator-line" class="guide-bar"></div>
             <div class="div-hello-p-about border rounded border-3">
@@ -71,6 +73,23 @@
                         target="_blank">Form.</a></p>
             </div>
         </section>
+        <section id="ow-about" class="main-container">
+            <h3>About Open Waters Swimming</h3>
+            <div id="about-separator-line" class="guide-bar"></div>
+            <p id="past-conferences-p">
+                Open water swimming is a truly different experience to the pool, and one all swimmers should try at
+                least once! Without the confines of lane ropes or walls, it’s liberating, adventurous and unique. Open
+                water also appeals to the adrenalin-seekers. Competitive races are often frenetic and fierce, with
+                swimmers hustling and bustling for position.
+            </p>
+
+            <div id="ow-video" class="ratio ratio-16x9">
+                <video autoplay muted>
+                    <source src="assets/images/1092307183-preview.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
         <section class="past-conferences">
             <h3>See the past ICOWS conferences</h3>
             <div id="about-separator-line" class="guide-bar"></div>
@@ -95,11 +114,10 @@
                                 href="https://www.openwaterswimming.com/international-conference-on-open-water-swimming-and-racing-techniques/">2020
                                 Conference in Turkey</a></p>
                     </div>
-
                 </div>
             </div>
-            </div>
         </section>
+
     </main>
     <footer class="container-fluid px-0 mx-0 footer-main-about">
         <div id="partner-about" class="container-fluid text-center px-0 mx-0">
