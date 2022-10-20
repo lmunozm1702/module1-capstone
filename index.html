@@ -13,27 +13,28 @@
 </head>
 
 <body>
-
     <header class="header-div container-fluid p-0 m-0">
         <div id="navbar-hamburguer" class="py-2 pt-4">
             <a href="#" id="hamburguer-a" class="nav-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
         </div>
         <nav id="top-navbar" class="container-fluid hidden">
-            <ul id="top-navbar-list" class="nav justify-content-end gap-2">
-                <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">English</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">My Page</li>
-                <li class="nav-item">|</li>
-                <li class="nav-item">Logout</li>
-            </ul>
+            <div class="top-nav-container">
+                <ul id="top-navbar-list" class="nav justify-content-end gap-2">
+                    <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">English</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">My Page</li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item">Logout</li>
+                </ul>
+            </div>
             <div id="bottom-navbar" class="mt-5 hidden">
                 <ul id="bottom-navbar-list" class="nav gap-3 gap-md-0">
                     <li id="nav-close" class="nav-item"><i class="fa-solid fa-circle-xmark fa-2xl"></i></li>
-                    <li class="nav-item"><a id="nav-logo" class="nav-link" href="index.html"><img
+                    <li id="nav-logo-desk" class="nav-item"><a id="nav-logo" class="nav-link" href="index.html"><img
                                 src="assets/images/irc-logo.png" alt="IRC Logo"></a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Program</a></li>
@@ -59,39 +60,40 @@
             </div>
             <h3 id="hello-date" class="fw-bold">2022.11.10(THU) ~ 11(FRI)</h3>
             <h5 id="hello-place" class="fw-light">@ Dubai, United Arab Emirates</h5>
-
         </section>
     </header>
 
     <main>
-        <section id="main-program" class="container-fluid pt-5 pb-3">
+        <section id="main-program" class="main-container container-fluid pt-5 pb-3">
             <header id="program-title" class="text-center">
                 <h3>Main Program</h3>
                 <div id="program-separator-line" class="guide-bar"></div>
             </header>
             <main id="div-main-program">
             </main>
-            <footer class="container-fluid text-center">
+            <footer id="footer-program" class="container-fluid text-center">
                 <div id="join-button" class="my-4 py-4 mx-5 fw-bold">Join ICOWS 2022!</div>
+                <div id="see-whole-program">
+                    <p class="text-decoration-underline">SEE THE WHOLE PROGRAM</p>
+                </div>
             </footer>
 
         </section>
-        <section id="featured-speakers" class="container-fluid">
+        <section id="featured-speakers" class="main-container container-fluid">
             <header id="speaker-title" class="text-center">
                 <h3>Featured Speakers</h3>
                 <div id="program-separator-line" class="guide-bar"></div>
             </header>
             <main id="div-main-speaker container-fluid">
-                <div id="first-speakers" class="row text-center my-sm-0 py-sm-0 g-sm-0 ms-1 ms-md-3 ms-lg-5 ms-xl-5">
+                <div id="first-speakers" class="row text-center">
                 </div>
-                <div id="more-button-div" class="container-fluid text-center">
+                <div id="more-button-div" class="container-fluid text-center hidden">
                     <div id="more-button" class="my-4 py-2 mx-1 fw-normal border border-2">More <i id="angle-down"
                             class="fa-solid fa-angle-down fa-xl"></i></div>
                 </div>
-                <div id="last-speakers"
-                    class="row text-center my-sm-0 py-sm-0 g-sm-0 ms-1 ms-md-3 ms-lg-5 ms-xl-5 visually-hidden">
+                <div id="last-speakers" class="row text-center hidden">
                 </div>
-                <div id="less-button-div" class="container-fluid text-center visually-hidden">
+                <div id="less-button-div" class="container-fluid text-center hidden">
                     <div id="more-button" class="my-4 py-2 mx-1 fw-normal border border-2">Less <i id="angle-down"
                             class="fa-solid fa-angle-up fa-xl"></i></div>
                 </div>
@@ -100,7 +102,7 @@
     </main>
 
     <footer class="container-fluid px-0 mx-0 footer-main">
-        <div id="partner-title" class="container-fluid text-center px-0 mx-0">
+        <div id="partner-title" class="main-container container-fluid text-center">
             <h3 class="text-white">Partner</h3>
             <div id="program-separator-line" class="guide-bar"></div>
             <div class="row g-5 mx-0 px-0 justify-content-around">
@@ -118,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div id="bottom-footer" class="container-fluid row align-items-center">
+        <div id="bottom-footer" class="container-fluid row align-items-center main-container">
             <div class="col text-end"><a href="https://www.creativecommons.org" target="_blank"><img width="75%"
                         src="assets/images/cc-logo2.png" alt="Creative Commons Logo"></a></div>
             <div class="col p-comment">© 2022 World Academy of Science, Engineering and
