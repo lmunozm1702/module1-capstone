@@ -347,7 +347,8 @@ h5 {
 }
 
 .main-about {
-  background: url("../images/mobile_intro_bg.png") center center no-repeat
+  background:
+    url("../images/mobile_intro_bg.png") center center no-repeat
     rgb(247, 247, 248);
   background-size: cover;
   background-repeat: no-repeat;
@@ -356,7 +357,8 @@ h5 {
 
 @media only screen and (min-width: 768px) {
   .main-about {
-    background: url("../images/about_bg_01.png") center center no-repeat
+    background:
+      url("../images/about_bg_01.png") center center no-repeat
       rgb(247, 247, 248);
     background-size: contain;
     background-repeat: no-repeat;
